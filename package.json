@@ -4,7 +4,8 @@
   "description": "this is a webhook for github and twitch interaction",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/bdougie/git-twitch/issues"
   },
-  "homepage": "https://github.com/bdougie/git-twitch#readme"
+  "homepage": "https://github.com/bdougie/git-twitch#readme",
+  "dependencies": {
+    "@octokit/webhooks": "^7.11.2",
+    "dotenv": "^8.2.0"
+  }
 }
