@@ -1,0 +1,19 @@
+{
+  "name": "git-twitch",
+  "version": "1.0.0",
+  "description": "this is a webhook for github and twitch interaction",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdougie/git-twitch.git"
+  },
+  "author": "bdougie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bdougie/git-twitch/issues"
+  },
+  "homepage": "https://github.com/bdougie/git-twitch#readme"
+}
