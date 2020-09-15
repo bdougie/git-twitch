@@ -19,6 +19,10 @@
   "homepage": "https://github.com/bdougie/git-twitch#readme",
   "dependencies": {
     "@octokit/webhooks": "^7.11.2",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-ws": "^4.0.0",
+    "http": "0.0.1-security",
+    "ws": "^7.3.1"
   }
 }
