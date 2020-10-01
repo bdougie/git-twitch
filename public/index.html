@@ -1,18 +1,24 @@
 <html>
+    <head>
+        <link type="text/css" href="./style.css">
+        <script src="https://cdn.jsdelivr.net/npm/comfy.js@latest/dist/comfy.min.js"></script>
+    </head>
     <body>
-        <h1>Just sitting here listening for some messages</h1>
+        <p class="gif"></p>
         <ul id="container" />
     </body>
+    <script src="./queue.js"></script>
+    <script src="./gif.js"></script>
     <script>
-        let socket = new WebSocket(`wss://${location.host}/socket`)
-        socket.onopen = function(e) {
-            console.log("connection has been established")
-        }
+      let socket = new WebSocket(`ws://${location.host}/socket`)
+      socket.onopen = function(e) {
+          console.log("connection has been established")
+      }
 
-        socket.onmessage = function(e) {
-            console.log(`I received the message: ${e.data}`)
-            const container = document.getElementById('container')
-            container.innerHTML += `<li>${e.data}</li>`
-        }
+      socket.onmessage = function(e) {
+          console.log(`I received the message: ${e.data}`)
+          const container = document.getElementById('container')
+          new gifAlert("", bdougie, flexPhrase, "starred");
+      }
     </script>
 </html>
