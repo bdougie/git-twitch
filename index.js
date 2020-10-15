@@ -11,7 +11,7 @@ const webhooks = new Webhooks({
 });
 
 webhooks.on("*", ({ id, name, payload }) => {
-  const output = name + " event received"
+  const output = name + " event received " + payload.sender.login
   console.log(output);
   // message = output;
   
