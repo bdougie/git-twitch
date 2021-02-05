@@ -3,8 +3,8 @@ const container = document.querySelector(".gif");
 const img = new Image();
 
 /* Config */
-const twitchTvHandle = "bdougieYO";
-const repoOwner = "bdougie";
+const twitchTvHandle = "github";
+const repoOwner = "mishmanners";
 const repoName = "git-twitch";
 const PAUSE_DURATION = 30 * 1000; // 30 seconds
 const DISPLAY_DURATION = 10 * 1000; // 10 seconds
@@ -70,7 +70,7 @@ function gifAlert(user, gif, audio, type) {
         audio.play();
         container.innerHTML = `
         <h1 class="text-shadows">${user + generateTitle[type]}</h1>
-        <img src="${gif}" />
+        <img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" />
         `;
         container.style.opacity = 1;
 

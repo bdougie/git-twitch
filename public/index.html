@@ -10,7 +10,7 @@
     <script src="./queue.js"></script>
     <script src="./gif.js"></script>
     <script>
-      let socket = new WebSocket(`ws://${location.host}/socket`)
+      let socket = new WebSocket(`wss://${location.host}/socket`)
       socket.onopen = function(e) {
           console.log("connection has been established")
       }
