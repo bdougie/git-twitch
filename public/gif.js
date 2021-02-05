@@ -67,7 +67,7 @@ const generateTitle = {
 
 function gifAlert(user, gif, audio, type) {
     queue.add(async () => {
-        audio.play();
+        // audio.play();
         container.innerHTML = `
         <h1 class="text-shadows">${user + generateTitle[type]}</h1>
         <img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" />
