@@ -10,7 +10,8 @@
 1. Fork this repo (optional, open a [Codespace](https://github.com/features/codespaces))
 2. Run `npm install smee-client -g`
 3. Start a new smee channel - https://smee.io/
-4. [Create a webhook](https://docs.github.com/en/github/supporting-the-open-source-community-with-github-sponsors/configuring-webhooks-for-events-in-your-sponsored-account#managing-webhooks-for-events-in-your-sponsored-account) in your forked repo that watches star events and point it to the new smee channel.
+4. [Create a webhook](https://docs.github.com/en/github/supporting-the-open-source-community-with-github-sponsors/configuring-webhooks-for-events-in-your-sponsored-account#managing-webhooks-for-events-in-your-sponsored-account). When creating your webhook, make sure you go to settings --> Webhooks and paste the Smee URL in the Payload URL. Edit the webhook; create a secret, and then under "Let me select individual events", choose Star and uncheck all other events.
+
 5. In the terminal `npm install`
 
 ### Start the server
