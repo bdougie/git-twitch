@@ -65,7 +65,7 @@ const generateTitle = {
     starred: ` starred ${repoName}, like we knew they would!`,
 };
 
-function gifAlert(user, gif, audio, type) {
+function gifAlert(user, gif, audio_, type) {
     queue.add(async () => {
         // audio.play();
         container.innerHTML = `
