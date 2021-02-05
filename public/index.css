@@ -30,13 +30,13 @@ body {
   .text-shadows {
     text-shadow: 3px 3px 0 #f49b90, 6px 6px 0 #f28b7d,
       9px 9px #f07a6a, 12px 12px 0 #f07a6a;
-    font-family: bungee, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
     font-size: calc(.25rem + 5vw);
-    font-weight: 400;
+    font-weight: 500;
     text-transform: uppercase;
     text-align: center;
     margin: 0;
-    color: #f6aca2;
+    color: #811100;
     animation: shadows 1.5s ease-in infinite, move 1.5s ease-in infinite;
     letter-spacing: 0.4rem;
   }
