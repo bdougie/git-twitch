@@ -5,7 +5,7 @@
   <strong>Wouldn't it be cool to make chat interactions for Twitch on GitHub? This is a webhook for github and twitch interaction.</strong>
 </div>
 
-## 🍴Setup for loocal development
+## 🍴Setup for local development
 
 1. Fork this repo (optional, open a [Codespace](https://github.com/features/codespaces))
 2. Run `npm install smee -g`
