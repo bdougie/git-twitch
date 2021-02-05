@@ -4,8 +4,8 @@ const img = new Image();
 
 /* Config */
 const twitchTvHandle = "bdougieYO";
-const repoOwner = "open-sauced";
-const repoName = "open-sauced";
+const repoOwner = "bdougie";
+const repoName = "git-twitch";
 const PAUSE_DURATION = 30 * 1000; // 30 seconds
 const DISPLAY_DURATION = 10 * 1000; // 10 seconds
 
