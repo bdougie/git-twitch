@@ -21,7 +21,7 @@ In your newly forked repo created a webhook from the repo settings that points i
 
 ![creating a webhook](https://user-images.githubusercontent.com/5713670/107150060-f03c6e80-6929-11eb-9d68-2c659f81f7a4.png)
 
-_note: your webhook will need to send json_
+_note: your webhook will need to send json. You will also need to set a secret._
 
 Choose to send selected events and deselect **Push** events and select **Stars**. Push events are a bit noisy for testing, Starring the repo is the preferred way to to test that this project is working.    
 
@@ -37,7 +37,10 @@ smee -u https://[your create smee channel url from step 2]
 ```
 
 ### 5. Start the server
-In a different terminal tab, you will need to start the wbe server. 
+Prior to starting the server you will need to create a new `.env` file. You can copy the [.env.example](https://github.com/bdougie/git-twitch/blob/main/.env.example) file. Please make sure to use the secret you set in step 3, this is required for the server to run.
+
+
+In a different terminal tab, you will need to start the web server. 
 
 ```sh
 npm install
