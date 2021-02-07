@@ -2,13 +2,13 @@
   <br>
   <img alt="daftpunktocat" src="https://octodex.github.com/images/daftpunktocat-guy.gif" width="300px">
   <h1>💄git-twitch💋</h1>
-  <strong>Wouldn't it be cool to make chat interactions for Twitch on GitHub? This is a webhook for github and twitch interaction.</strong>
+  <strong>Wouldn't it be cool to make chat interactions for Twitch on GitHub? This is a webhook for github and twitch to interact with each other.</strong>
 </div>
 
 ## 🍴Setup for local development
 
 ### 1. Fork this repo (optional, open a [Codespace](https://github.com/features/codespaces))
-The fastest way to get starte is byu fokring this repo. PRs are welcomed if you find anything missing or unclear.  
+The fastest way to get started is by forking this repo. PRs are welcomed if you find anything missing or unclear.  
 
 ### 2. Start a new smee channel - https://smee.io/
 smee.io is a Webhook payload delivery service. It receives payloads then sends them to your locally (development) running application. Smee is not meant to be used in production.
@@ -17,7 +17,7 @@ smee.io is a Webhook payload delivery service. It receives payloads then sends t
 
 ### 3. [Create a webhook](https://docs.github.com/en/github/supporting-the-open-source-community-with-github-sponsors/configuring-webhooks-for-events-in-your-sponsored-account#managing-webhooks-for-events-in-your-sponsored-account) 
 
-In your newly forked repo created a webhook from the repo settings that points it to the new smee channel.
+In your newly forked repo, create a webhook from the repo settings that points it to the new smee channel.
 
 ![creating a webhook](https://user-images.githubusercontent.com/5713670/107150060-f03c6e80-6929-11eb-9d68-2c659f81f7a4.png)
 
@@ -40,7 +40,7 @@ smee -u https://[your create smee channel url from step 2]
 Prior to starting the server you will need to create a new `.env` file. You can copy the [.env.example](https://github.com/bdougie/git-twitch/blob/main/.env.example) file. Please make sure to use the secret you set in step 3, this is required for the server to run.
 
 
-In a different terminal tab, you will need to start the web server. 
+In a different new terminal tab (different from the smee receiver), start the web server with the below commands. 
 
 ```sh
 npm install
