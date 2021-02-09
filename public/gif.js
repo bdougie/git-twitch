@@ -65,6 +65,7 @@ const generateTitle = {
     starred: ` starred ${repoName}, like we knew they would!`,
 };
 
+// Need to fix the CSS here
 function gifAlert(user, gif, audio_, type) {
     queue.add(async () => {
         // audio.play();
