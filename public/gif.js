@@ -55,7 +55,7 @@ if (flags.broadcaster && command == "pause") {
 const queue = new Queue();
 
 
- ComfyJS.onChat = (user, message, flags, self, extra) => {
+ComfyJS.onChat = (user, message, flags, self, extra) => {
     console.log(user + ":", message);
 };
 
