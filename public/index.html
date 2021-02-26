@@ -17,9 +17,9 @@
       }
 
       socket.onmessage = function(e) {
-          console.log(`I received the message: ${e.data}`)
+          console.log(e.data)
           const container = document.getElementById('container')
-          new gifAlert("", bdougie, flexPhrase, "starred");
+          new gifAlert(e.data, bdougie, flexPhrase, "starred");
       }
     </script>
 </html>

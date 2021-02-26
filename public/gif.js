@@ -3,9 +3,9 @@ const container = document.querySelector(".gif");
 const img = new Image();
 
 /* Config */
-const twitchTvHandle = "github";
-const repoOwner = "bdougie";
-const repoName = "git-twitch";
+const twitchTvHandle = "GitHub";
+const repoOwner = "MishManners";
+const repoName = "MishManners/Git-Twitch";
 const PAUSE_DURATION = 30 * 1000; // 30 seconds
 const DISPLAY_DURATION = 10 * 1000; // 10 seconds
 
@@ -54,10 +54,12 @@ if (flags.broadcaster && command == "pause") {
 
 const queue = new Queue();
 
+
 ComfyJS.onChat = (user, message, flags, self, extra) => {
     console.log(user + ":", message);
 };
 
+// change these commands for personalisation of your channel.
 const generateTitle = {
     yo: " is hype!",
     welcome: " needs a welcome!",
@@ -66,7 +68,7 @@ const generateTitle = {
 };
 
 // Need to fix the CSS here
-function gifAlert(user, gif, audio_, type) {
+function gifAlert(user, gif, audio_, type,) {
     queue.add(async () => {
         // audio.play();
         container.innerHTML = `
