@@ -11,7 +11,7 @@ const webhooks = new Webhooks({
 });
 
 webhooks.on("*", ({ id, name, payload }) => {
-  const output = name + " event received " + payload.sender.login
+  const output = payload.sender.login
   console.log(output);
   // message = output;
   
@@ -49,7 +49,7 @@ wss.on('connection', (ws) => {
     ws.on('message', (message) => {
         //log the received message and send it back to the client
         console.log('received: %s', message);
-        ws.send(`Hello, you sent -> ${message}`);
+        ws.send(JSON.stringify(message));
     });
 
     //send immediately a feedback to the incoming connection    
