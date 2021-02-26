@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link type="text/css" href="./style.css">
+        <link type="text/css" href="./index.css">
         <script src="https://cdn.jsdelivr.net/npm/comfy.js@latest/dist/comfy.min.js"></script>
     </head>
     <body>
@@ -10,6 +10,7 @@
     <script src="./queue.js"></script>
     <script src="./gif.js"></script>
     <script>
+      // change to WSS if online and WS if local
       let socket = new WebSocket(`ws://${location.host}/socket`)
       socket.onopen = function(e) {
           console.log("connection has been established")

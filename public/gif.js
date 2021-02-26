@@ -3,7 +3,7 @@ const container = document.querySelector(".gif");
 const img = new Image();
 
 /* Config */
-const twitchTvHandle = "bdougieYO";
+const twitchTvHandle = "github";
 const repoOwner = "bdougie";
 const repoName = "git-twitch";
 const PAUSE_DURATION = 30 * 1000; // 30 seconds
@@ -65,12 +65,13 @@ const generateTitle = {
     starred: ` starred ${repoName}, like we knew they would!`,
 };
 
-function gifAlert(user, gif, audio, type) {
+// Need to fix the CSS here
+function gifAlert(user, gif, audio_, type) {
     queue.add(async () => {
-        audio.play();
+        // audio.play();
         container.innerHTML = `
         <h1 class="text-shadows">${user + generateTitle[type]}</h1>
-        <img src="${gif}" />
+        <img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" />
         `;
         container.style.opacity = 1;
 

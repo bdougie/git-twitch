@@ -15,7 +15,7 @@ smee.io is a Webhook payload delivery service. It receives payloads then sends t
 
 ![smee channel](https://user-images.githubusercontent.com/5713670/107150005-ab183c80-6929-11eb-8f8e-afbdff02f301.png)
 
-### 3. [Create a webhook](https://docs.github.com/en/github/supporting-the-open-source-community-with-github-sponsors/configuring-webhooks-for-events-in-your-sponsored-account#managing-webhooks-for-events-in-your-sponsored-account) 
+### 3. [Create a webhook](https://docs.github.com/en/github/supporting-the-open-source-community-with-github-sponsors/configuring-webhooks-for-events-in-your-sponsored-account#managing-webhooks-for-events-in-your-sponsored-account)
 
 In your newly forked repo, create a webhook from the repo settings that points it to the new smee channel.
 
@@ -40,7 +40,7 @@ smee -u https://[your create smee channel url from step 2]
 Prior to starting the server you will need to create a new `.env` file. You can copy the [.env.example](https://github.com/bdougie/git-twitch/blob/main/.env.example) file. Please make sure to use the secret you set in step 3, this is required for the server to run.
 
 
-In a different new terminal tab (different from the smee receiver), start the web server with the below commands. 
+In a different new terminal tab (different from the smee receiver), start the web server with the below commands.
 
 ```sh
 npm install
