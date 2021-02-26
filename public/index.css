@@ -15,18 +15,18 @@ body {
   }
   
   .alerts {
-    display: grid;
-    justify-content: center;
-    width: 1040px;
-    text-align: center;
-  }
-  
-  .content {
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
+    background: peru;
   }
-  
+
+  .gif {
+    max-width: 500px;
+    justify-content: center;
+    background: red;
+  }
+
   .text-shadows {
     text-shadow: 3px 3px 0 #f49b90, 6px 6px 0 #f28b7d,
       9px 9px #f07a6a, 12px 12px 0 #f07a6a;
