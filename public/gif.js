@@ -54,10 +54,10 @@ if (flags.broadcaster && command == "pause") {
 
 const queue = new Queue();
 
-/* TODO FIX ME
+
  ComfyJS.onChat = (user, message, flags, self, extra) => {
     console.log(user + ":", message);
-}; */
+};
 
 // change these commands for personalisation of your channel.
 const generateTitle = {
