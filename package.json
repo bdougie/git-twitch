@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npm test",
-    "start": "node index.js"
+    "start": "node index.js",
+    "start:watch": "nodemon --watch index.js"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,8 @@
     "express-ws": "^4.0.0",
     "http": "0.0.1-security",
     "ws": "^7.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
