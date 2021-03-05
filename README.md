@@ -47,5 +47,11 @@ npm install
 npm start
 ```
 
+If you wish to run the server in development mode you can also run the following command.
+
+```sh
+npm run start:watch
+```
+
 ## 🚀 Deploy this
 _to be continued_
