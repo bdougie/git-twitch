@@ -4,8 +4,8 @@ const img = new Image();
 
 /* Config */
 const twitchTvHandle = "GitHub";
-const repoOwner = "MishManners";
-const repoName = "MishManners/Git-Twitch";
+const repoOwner = "bdougie";
+const repoName = "bdougie/git-twitch";
 const PAUSE_DURATION = 30 * 1000; // 30 seconds
 const DISPLAY_DURATION = 10 * 1000; // 10 seconds
 
@@ -64,7 +64,7 @@ const generateTitle = {
     yo: " is hype!",
     welcome: " needs a welcome!",
     pizza: " needed a pizza party!",
-    starred: ` starred ${repoName}, like we knew they would!`,
+    starred: ` starred ${repoName}!`,
 };
 
 // Need to fix the CSS here
