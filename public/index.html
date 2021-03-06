@@ -17,9 +17,8 @@
       // of the url to toggle wss
       const urlParams = new URLSearchParams(location.search);
       const protocol = 
-        urlParams.has("remote") 
-        && urlParams.get('remote').toLowerCase() == 'true'
-            ? "wss" : "ws";
+        urlParams.has("secure") && urlParams.get('secure').toLowerCase() == 'true'
+        ? "wss" : "ws";
 
       let socket = new WebSocket(`${protocol}://${location.host}/socket`)
       socket.onopen = function(e) {
