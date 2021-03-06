@@ -13,9 +13,17 @@
     <script src="./gif.js"></script>
     <script>
       // change to WSS if online and WS if local
-      let socket = new WebSocket(`ws://${location.host}/socket`)
+      // when hosting online add ?remote=true to the end
+      // of the url to toggle wss
+      const urlParams = new URLSearchParams(location.search);
+      const protocol = 
+        urlParams.has("remote") 
+        && urlParams.get('remote').toLowerCase() == 'true'
+            ? "wss" : "ws";
+
+      let socket = new WebSocket(`${protocol}://${location.host}/socket`)
       socket.onopen = function(e) {
-          console.log("connection has been established")
+          console.log(`${protocol} connection has been established`)
       }
 
       socket.onmessage = function(e) {
