@@ -29,27 +29,11 @@ ComfyJS.Init(twitchTvHandle);
 ComfyJS.onCommand = (user, command, message, flags, extra) => {
 console.log(`!${command} was typed in chat`);
 
-if (command == "yo") {
-    new gifAlert(user, beyGif, pewAudio, command);
-}
-
-if (command == "welcome") {
-    new gifAlert(message, welcomeGif, magicChime, command);
-}
-
-if (flags.broadcaster && command == "pizza") {
-    new gifAlert(message, pizzaGif, magicChime, command);
-}
-
-if (command == "flex") {
-    new gifAlert(message, bdougie, flexPhrase, command);
-}
-
-if (flags.broadcaster && command == "pause") {
-    // Clear GIF queue and pause for PAUSE_DURATION
-    queue.clear();
-    queue.pause(PAUSE_DURATION);
-}
+    if (flags.broadcaster && command == "pause") {
+        // Clear GIF queue and pause for PAUSE_DURATION
+        queue.clear();
+        queue.pause(PAUSE_DURATION);
+    }
 };
 
 const queue = new Queue();
@@ -61,16 +45,13 @@ ComfyJS.onChat = (user, message, flags, self, extra) => {
 
 // change these commands for personalisation of your channel.
 const generateTitle = {
-    yo: " is hype!",
-    welcome: " needs a welcome!",
-    pizza: " needed a pizza party!",
     starred: ` starred ${repoName}!`,
 };
 
 // Need to fix the CSS here
-function gifAlert(user, gif, audio_, type,) {
+function gifAlert(user, gif, audio, type,) {
     queue.add(async () => {
-        // audio.play();
+        audio.play();
         container.innerHTML = `
         <h1 class="text-shadows">${user + generateTitle[type]}</h1>
         <img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" />
