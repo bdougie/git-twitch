@@ -7,7 +7,7 @@ const twitchTvHandle = "GitHub";
 const repoOwner = "bdougie";
 const repoName = "bdougie/git-twitch";
 const PAUSE_DURATION = 30 * 1000; // 30 seconds
-const DISPLAY_DURATION = 10 * 1000; // 10 seconds
+const DISPLAY_DURATION = 20 * 1000; // 20 seconds
 
 /* GIFs */
 const beyGif = "https://media.giphy.com/media/VxkNDa92gcsRq/giphy.gif";
@@ -53,8 +53,8 @@ function gifAlert(user, gif, audio, type,) {
     queue.add(async () => {
         audio.play();
         container.innerHTML = `
-        <h1 class="text-shadows">${user + generateTitle[type]}</h1>
-        <img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" />
+        <marquee><h1 class="text-shadows">${user + generateTitle[type]}</h1>
+        <img src="heart.gif" />
         `;
         container.style.opacity = 1;
 
