@@ -1,7 +1,7 @@
 <div align="center">
   <br>
-  <img alt="daftpunktocat" src="https://octodex.github.com/images/daftpunktocat-guy.gif" width="300px">
-  <h1>💄git-twitch💋</h1>
+  <img alt="8bit-heart-mona" src="https://user-images.githubusercontent.com/5679180/79618120-0daffb80-80be-11ea-819e-d2b0fa904d07.gif" width="300px">
+  <h1>git-twitch</h1>
   <strong>Wouldn't it be cool to make chat interactions for Twitch on GitHub? This is a webhook for github and twitch to interact with each other.</strong>
 </div>
 
