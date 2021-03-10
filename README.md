@@ -2,10 +2,10 @@
   <br>
   <img alt="8bit-heart-mona" src="https://user-images.githubusercontent.com/5679180/79618120-0daffb80-80be-11ea-819e-d2b0fa904d07.gif" width="300px">
   <h1>git-twitch</h1>
-  <strong>Wouldn't it be cool to make chat interactions for Twitch on GitHub? This is a webhook for github and twitch to interact with each other.</strong>
-<br />  
-<em>(gif created by <a href="https://github.com/pifafu">@pifafu)</a></em>
+  <em>(gif created by <a href="https://github.com/pifafu">@pifafu)</a></em>
 </div>
+
+This is a service for github and twitch to interact with each other. The use case for this git-twitch interaction between Twitch and GitHub through webhooks. If you are new to Twitch Chat interactions, you can check out my original chatbot, the [beybot](https://github.com/open-sauced/beybot). In the README you will find further explanation on how Twitch interactions work.   
 
 # 🍴Setup for local development
 
@@ -54,6 +54,23 @@ If you wish to run the server in development mode you can also run the following
 ```sh
 npm run start:watch
 ```
+
+## 6.  Add browser source plugin
+
+### OBS Studio
+
+[OBS Studio](https://obsproject.com/) is a free and open-source software for live-streaming and screen recording. This walk-through will show OBS Studio and consult your platform's documentation or community on how to add browser source plugins.
+
+**Browser Source plugins**
+When you set up an out of the box alert or chat system, like [Streamlabs](https://streamlabs.com/), they require you to add something called a Browser Source plugin. To do this, you add the URL pointing to the plugin, provided in the Streamlabs dashboard. This is the backbone of most streaming interactions on Twitch. Browser source plugins are HTML, CSS, and some JavaScript—so basically webpages. 
+
+In OBS add a new source to the Scene of your choosing. OBS Studio has a few different source options, but choose Browser and proceed with adding browser source, using your deployed localhost URL (**http://localhost:3000)**. _Keep in this is development purposes. You will want to deploy this to a production ready server to use   
+
+![](https://paper-attachments.dropbox.com/s_202334A481577855209C92DA29E80CC6349876B8BAA86FB00EF2859B2EC0BDD6_1593994390643_Screenshot+2020-07-05+17.12.55.png)
+
+*One thing to keep in mind, OBS will be using a cached version of the site at the moment you add the browser plugin. If you make updates, you will need to clear the "Refresh cache of current page" button (I spent a lot of time not knowing that existed).* 
+
+![](https://paper-attachments.dropbox.com/s_202334A481577855209C92DA29E80CC6349876B8BAA86FB00EF2859B2EC0BDD6_1594017692929_Screenshot+2020-07-05+23.41.25.png)
 
 # 🚀 Deploy this
 _to be continued_
