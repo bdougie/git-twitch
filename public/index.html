@@ -14,10 +14,16 @@
     <script src="./queue.js"></script>
     <script src="./gif.js"></script>
     <script>
-      // change to WSS if online and WS if local
-      let socket = new WebSocket(`wss://${location.host}/socket`)
+      // add ?secure=true to the end of the url to use wss
+      const urlParams = new URLSearchParams(location.search);
+      const protocol = 
+        urlParams.has("secure") && urlParams.get('secure').toLowerCase() == 'true'
+        ? "wss" : "ws";
+
+      let socket = new WebSocket(`${protocol}://${location.host}/socket`)
+
       socket.onopen = function(e) {
-          console.log("connection has been established")
+          console.log(`${protocol} connection has been established`)
       }
 
       socket.onmessage = function(e) {
