@@ -16,9 +16,9 @@ const pizzaGif = "https://media.giphy.com/media/3o6nUXaNE4wdhq8Foc/giphy.gif";
 const bdougie = "https://media.giphy.com/media/LT1Pq74cXuNQxyUmLk/giphy.gif";
 
 /* Sound Effects */
-const pewAudio = new Audio("horn.wav");
-const magicChime = new Audio("Magic_Chime.mp3");
-const flexPhrase = new Audio("flex.mp3");
+const pewAudio = new Audio("audio/horn.wav");
+const magicChime = new Audio("audio/Magic_Chime.mp3");
+const flexPhrase = new Audio("audio/flex.mp3");
 
 // Resolve promise after duration
 const wait = async duration => {
@@ -54,7 +54,7 @@ function gifAlert(user, gif, audio, type,) {
         audio.play();
         container.innerHTML = `
         <marquee><h1 class="text-shadows">${user + generateTitle[type]}</h1>
-        <img src="heart.gif" />
+        <img src="images/heart.gif" />
         `;
         container.style.opacity = 1;
 
