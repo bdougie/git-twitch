@@ -4,7 +4,7 @@
   "description": "this is a webhook for github and twitch interaction",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node server/index.js",
     "start:watch": "nodemon --watch index.js"
   },
   "repository": {
