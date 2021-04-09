@@ -71,7 +71,7 @@ In OBS add a new source to the Scene of your choosing. OBS Studio has a few diff
 You will most likely want to point this to your GitHub repos and Twitch
 account. You can do this by adding URLSearchParams to the end of the URL, i.e. `?twitch=bdougieyo&owner=bdougie&repo=bdougie/git-twitch`.
 
-![example](https://user-images.githubusercontent.com/5713670/114123617-a1c33600-98c0-11eb-8edd-2c4302d2c911.png)
+![example of browser source with params](https://user-images.githubusercontent.com/5713670/114124171-d71c5380-98c1-11eb-926c-f70c8083b6f9.png)
 
 *One thing to keep in mind, OBS will be using a cached version of the site at the moment you add the browser plugin. If you make updates, you will need to clear the "Refresh cache of current page" button (I spent a lot of time not knowing that existed).* 
 
