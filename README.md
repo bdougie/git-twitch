@@ -78,4 +78,15 @@ account. You can do this by adding URLSearchParams to the end of the URL, i.e. `
 ![cache refresh](https://paper-attachments.dropbox.com/s_202334A481577855209C92DA29E80CC6349876B8BAA86FB00EF2859B2EC0BDD6_1594017692929_Screenshot+2020-07-05+23.41.25.png)
 
 # 🚀 Deploy this
-_to be continued_
+There are a few places you can deploy this applications, keep in mind, you will need a running noode server in production. Because of this, we cannoot deploy this to GitHub Pages or any other static hosting provider. The following is a list of hosting providers you can deploy this to. 
+
+If you are interested in making a contribution to this project, consider linking to instructions or a blog on how to deploy this below. _see this [issue](https://github.com/bdougie/git-twitch/issues/5) for more details._
+
+- AWS
+- Azure
+- Digital Ocean 
+- Glitch
+- Heroku
+- [render.com](https://render.com/docs/deploy-node-express-app)
+- repl.it
+- Vercel
