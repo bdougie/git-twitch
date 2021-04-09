@@ -1,11 +1,16 @@
+/* Config from URL */
+const paramsString = window.location.search;
+const searchParams = new URLSearchParams(paramsString);
+
 /* DOM */
 const container = document.querySelector(".gif");
 const img = new Image();
 
 /* Config */
-const twitchTvHandle = "GitHub";
-const repoOwner = "bdougie";
-const repoName = "bdougie/git-twitch";
+/* example: http://localhost:3000/?twitch=bdougieyo&owner=bdougie&repo=git-twitch */
+const twitchTvHandle = searchParams.has("twitch") ? searchParams.get("twitch") : "GitHub";
+const repoOwner = searchParams.has("owner") ? searchParams.get("owner") : "bdougie";
+const repoName = searchParams.has("repo") ? searchParams.get("repo") : "bdougie/git-twitch";
 const PAUSE_DURATION = 30 * 1000; // 30 seconds
 const DISPLAY_DURATION = 20 * 1000; // 20 seconds
 
@@ -65,3 +70,4 @@ function gifAlert(user, gif, audio, type,) {
         }
     });
 }
+
