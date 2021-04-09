@@ -14,16 +14,8 @@ const repoName = searchParams.has("repo") ? searchParams.get("repo") : "bdougie/
 const PAUSE_DURATION = 30 * 1000; // 30 seconds
 const DISPLAY_DURATION = 20 * 1000; // 20 seconds
 
-/* GIFs */
-const beyGif = "https://media.giphy.com/media/VxkNDa92gcsRq/giphy.gif";
-const welcomeGif = "https://media.giphy.com/media/l3V0doGbp2EDaLHJC/giphy.gif";
-const pizzaGif = "https://media.giphy.com/media/3o6nUXaNE4wdhq8Foc/giphy.gif";
-const bdougie = "https://media.giphy.com/media/LT1Pq74cXuNQxyUmLk/giphy.gif";
-
 /* Sound Effects */
-const pewAudio = new Audio("audio/horn.wav");
 const magicChime = new Audio("audio/Magic_Chime.mp3");
-const flexPhrase = new Audio("audio/flex.mp3");
 
 // Resolve promise after duration
 const wait = async duration => {
@@ -42,7 +34,6 @@ console.log(`!${command} was typed in chat`);
 };
 
 const queue = new Queue();
-
 
 ComfyJS.onChat = (user, message, flags, self, extra) => {
     console.log(user + ":", message);
