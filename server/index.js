@@ -33,7 +33,7 @@ webhooks.on("error", (error) => {
 const app = express();
 
 // add middleware to server the static files
-app.use(express.static('public'))
+app.use(express.static('client'))
 
 // add middleware for the webhooks
 app.use(webhooks.middleware)
