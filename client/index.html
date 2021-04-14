@@ -12,13 +12,13 @@
         </section>
     </body>
     <script src="./queue.js"></script>
-    <script src="./gif.js"></script>
+    <script src="./index.js"></script>
     <script>
       // add ?secure=true to the end of the url to use wss
       const urlParams = new URLSearchParams(location.search);
       const protocol = 
-        urlParams.has("secure") && urlParams.get('secure').toLowerCase() == 'true'
-        ? "wss" : "ws";
+        urlParams.has("local") && urlParams.get('local').toLowerCase() == 'true'
+        ? "ws" : "wss";
 
       let socket = new WebSocket(`${protocol}://${location.host}/socket`)
 
